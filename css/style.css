@@ -1297,7 +1297,7 @@ html{
 
 @media only screen and (max-width:360px){
     .eightSection:before {
-        left: -200px;
+        left: -220px;
     }
 }
 
