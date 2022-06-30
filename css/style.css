@@ -1021,6 +1021,9 @@ html{
     .firtSection{
         background-position-x: -200px;
     }
+    .articleBottom{
+        width: 30%;
+    }
 }
 
 /*   -----------  view in 991  ---------   */
@@ -1033,8 +1036,14 @@ html{
     .container{
         width: 75%;
     }
-    .nav-section .left{
+    .nav-section .right{
         display: none;
+    }
+    .information .left {
+        width: 100%;
+    }
+    .left-a {
+        font-size: 0.8rem;
     }
     .information{
         padding: 0;
@@ -1053,6 +1062,9 @@ html{
     }
     .play{
         top: -13px;
+    }
+    .firstPara{
+        padding-right: 300px;
     }
 
     /* -----  second section  ----- */
@@ -1158,8 +1170,134 @@ html{
 
 /*   -----------  view in 575  ---------   */
 
-@media only screen and(max-width:575px){
+@media only screen and (max-width:575px){
+
+
     .container{
+        width: 95%;
+    }
+    .information{
         width: 100%;
     }
+    .image {
+        width: 20%;
+    }
+    .left-a{
+        font-size: 0.7rem;
+    }
+    .firtSection p{
+        padding-right: 50px;
+    }
+    .eightSection:before{
+        width: 575px;
+    }
+    .articleBottom{
+        width: 60%;
+    }
+    .experience{
+        width: 30%;
+    }
+    .learnmoreButton{
+        width: 50%;
+    }
+    .threedivs {
+        width: 100%;
+    }
+    .JesonThomas{
+        display: none;
+    }
+    .testominalPara{
+        padding: 0 50px;
+    }
+    .seventhSection{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .eightSection{
+        padding: 0;
+    }
+    .getStarted{
+        width: 35%;
+    }
+    .tenthSection{
+        padding: 50px;
+    }
+    .tenthSection .threeDivs{
+        width: 100%;
+    }
+    .eleventhSevtion .threeDivs{
+        width: 100%;
+    }
+    .threeMiddle{
+        display: none;
+    }
 }
+
+/*   -----------  view in 480  ---------   */
+
+@media only screen and (max-width:480px){
+
+    .commonhead2{
+        font-size: 1.2rem;
+    }
+    .commonHead{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .business{
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+    .firtSection {
+        background-position-x: -600px;
+    }
+    .articleBottom{
+        width: 80%;
+    }
+    .learnmoreButton{
+        width: 45%;
+    }
+    .thirdImage{
+        width: 90%;
+    }
+    .achivmentImage{
+        width: 100%;
+    }
+    .experience{
+        width: 35%;
+        left: 70%;
+    }
+    .eightSection:before{
+        left: -100px;
+    }
+    .getStarted{
+        width: 40%;
+    }
+    .ninethHead{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .ninethAnchor{
+        margin-top: 20px;
+    }
+    .subscribe{
+        width: 90%;
+    }
+    .eleventhAnchor{
+        top: 80px;
+        left: 0;
+    }
+    .inputEmail{
+        padding: 15px;
+    }
+}   
+
+/*   -----------  view in 360  ---------   */
+
+
+@media only screen and (max-width:360px){
+    .eightSection:before {
+        left: -200px;
+    }
+}
+
