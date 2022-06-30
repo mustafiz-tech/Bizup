@@ -1289,9 +1289,48 @@ html{
     }
 }   
 
-/*   -----------  view in 360  ---------   */
+/*   -----------  view in 400  ---------   */
 
 
-@media only screen and (max-width:360px){
+@media only screen and (max-width:400px){
+    .articleBottom {
+        width: 100%;
+    }
+    .experience{
+        width: 42%;
+        top: 30%;
+    }
+    .getStarted{
+        width: 50%;
+    }
+    .eleventhAnchor{
+        top: 60px;
+    }
+    .ninethHead{
+        font-size: 1.6rem;
+    }
+    .left-a{
+        font-size: 1rem;
+    }
+    .dpNone{
+        display: none;
+    }
+    .nav-section{
+        padding-bottom: 10px;
+    }
+    .information .left{
+        margin-top: 10px;
+    }
+}
+
+/*   -----------  view in 400  ---------   */
+
+@media only screen and (max-width:400px){
+    .left-a{
+        font-size: 0.8rem;
+    }
+    .learnMore{
+        font-size: 0.9rem;
+    }   
 }
 
