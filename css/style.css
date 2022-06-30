@@ -5,16 +5,21 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+}
+html{
+    font-size: 16px;
 }
 
-/* common classes */
+
+/* ----------  common classes  ------------ */
+
+
+
 .clearfix:after{
     content: '';
     display: block;
     clear: both;
 }
-
 .container{
     width: 75%;
     max-width: 1200px;
@@ -37,6 +42,10 @@ body{
     margin-right: 10px;
     border-radius: 50px;
     font-size: 1rem;
+    transition: all 0.2s ease-in 0ms;
+}
+.learnMore:hover{
+    background-color: #043d72;
 }
 .fa-long-arrow-right{
     margin-left: 10px;
@@ -68,74 +77,17 @@ body{
     font-weight: 500;
     margin-bottom: 20px;
 }
-/* header section */
 
-.header-section{
-    width: 100%;
-    background-color: #e94d65;
-}
-.header-main-div{
-    height: 100%;
-}
-/* left section */
-.main-left{
-    width: 50%;
-}
-.three-div{
-    color: #fff;
-    padding: 15px 0;
-}
-.main-div .random{
-    border-right: 1px solid #fff;
-}
-.main-right{
-    width: 30%;
-}
-.three-div .fa{
-    font-size: 1rem;
-    margin-right: 5px;
-}
-.top-a{
-    font-size: 0.8rem;
-    color: #fff;
-    font-weight: 500;
-}
-.random{
-    border-right: 1px solid #fff;
-    padding-right: 15px;
-}
-/* right section */
-.main-right{
-    color: #fff;
-}
-.two-div{
-    width: 60%;
-    padding: 15px 0;
-}
-.right{
-    width: 35%;
-    border-left: 1px solid #fff;
-    padding-left: 15px;
-}
-.header-para{
-    display: inline-block;
-    margin-left: 5px;
-    font-size: 0.8rem;
-    font-weight: 300;
-}
-.two-div .fa-clock-o{
-    font-size: 1rem;
-}
-.right-a{
-    font-size: 0.9rem;
-    margin-right: 15px;
-    color: #fff;
-}
 
-/* nav section */
+
+/* ----------  nav section  ------------ */
+
 .nav-section{
     width: 100%;
     padding: 20px 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 200;
 }
 .image{
     width: 14%;
@@ -181,7 +133,78 @@ body{
     font-size: 0.4rem;
 }
 
-/* first section */
+
+/* ----------  header section  ------------ */
+
+.awayHeader{
+    width: 100%;
+    padding-top: 100px;
+}
+.header-section{
+    width: 100%;
+    background-color: #e94d65;
+}
+.header-main-div{
+    height: 100%;
+}
+/* left section */
+.main-left{
+    width: 50%;
+}
+.three-div{
+    color: #fff;
+    padding: 15px 0;
+}
+.main-div .random{
+    border-right: 1px solid #fff;
+}
+.three-div span{
+    margin-right: 5px;
+}
+.top-a{
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+}
+.random{
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+}
+/* right section */
+.main-right{
+    width: 30%;
+}
+.main-right{
+    color: #fff;
+}
+.two-div{
+    width: 60%;
+    padding: 15px 0;
+}
+.right{
+    width: 35%;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+}
+.header-para{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.two-div span{
+    margin-right: 5px;
+}
+
+.right-a{
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: #fff;
+}
+
+
+/* ----------  first section  ------------ */
+
 
 .firtSection{
     min-height: 850px;
@@ -203,11 +226,18 @@ body{
 }
 
 .articleBottom{
-    width: 25%;
+    width: 30%;
     display: flex;
     margin-top: 40px;
 }
+.learnmoreButton{
+    width: 65%;
+}
+.firstPara{
+    padding-right: 700px;
+}
 .anchorPlay{
+    width: 30%;
     position: relative;
     margin-left: 10px;
 }
@@ -218,16 +248,17 @@ body{
     top: -17px;
 }
 
-/* second section  */
+
+/* ----------  second section  ------------ */
+
 .secondSection{
     width: 100%;
     position: relative;
     top: -100px;
 }
 .servicesMain{
-    border: 2px solid #f8f9fa;
     border-top-right-radius: 100px;
-    box-shadow: 0 0 50px #454545;
+    box-shadow: 0 0 50px #4545451c;
     background-color: #fff;
 }
 .services{
@@ -240,8 +271,8 @@ body{
     margin-bottom: 20px;
 }
 .servicesHead{
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 700;
     color: #043d72;
 }
 .servicesPara{
@@ -256,7 +287,9 @@ body{
 .servicesEnd{
     border-right: none;
 }
-/* third section */
+
+/* ----------  third section  ------------ */
+
 
 .thirdSection{
     width: 100%;
@@ -333,7 +366,9 @@ body{
     font-size: 1rem;
     margin-right: 5px;
 }
-/* fourth section */
+
+/* ----------  fourth section  ------------ */
+
 .fourthSection{
     padding: 100px 0;
     width: 100%;
@@ -342,11 +377,10 @@ body{
     background-size: cover;
 }
 .fourthMain{
-    border: 2px solid #f8f9fa;
     margin-bottom: 50px;
     text-align: left;
     margin-top: 80px;
-    box-shadow: 0 0 50px #454545;
+    box-shadow: 0 0 50px #4545451c;
     background-color: #fff;
 }
 .contentOptimizing{
@@ -359,7 +393,9 @@ body{
     border-bottom: 2px solid #f8f9fa;
 }
 
-/* fifth section */
+/* ----------  fifth section  ------------ */
+
+
 .fifthSection{
     width: 100%;
     text-align: center;
@@ -367,6 +403,29 @@ body{
     padding: 115px 0;
     position: relative;
     border-top-left-radius: 100px;
+    z-index: 50;
+}
+.fifthSection:before{
+    content: '';
+    background-image: url(../img/pattern2.png);
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.fifthSection:after{
+    content: '';
+    background-image: url(../img/pattern3.png);
+    height: 100%;
+    width: 335px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 .testominal{
     margin-bottom: 20px;
@@ -413,7 +472,8 @@ body{
     left: 82%;
 }
 
-/* sixth section */
+
+/* ----------  sixth section  ------------ */
 
 .sixthSection{
     width: 100%;
@@ -427,16 +487,30 @@ body{
     width: 100%;
 }
 
-/* seventh section */
+
+/* ----------  seventh section  ------------ */
 
 .seventhSection{
     width: 100%;
     padding: 150PX 0;
     position: relative;
 }
+.seventhSection:after{
+    content: '';
+    height: 780px;
+    width: 800px;
+    background-image: url(../img/pattern4.png);
+    object-fit: cover;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 1;
+
+}
 .achivment{
     width: 45%;
     padding-top: 80px;
+    z-index: 10;
 }
 .userBest{
     border-top: 1px solid #e8e8e8;
@@ -444,17 +518,14 @@ body{
     margin-top: 30px;
     width: 100%;
 }
-.threeCollabs{
-    border: 1px solid #ebebeb;
-}
 .bestThreeDivs{
     width: 33%;
     padding: 35px 20px;
     text-align: center;
+    transition: all 0.2s ease-in 0s;
 }
-.bestPhoto{
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
+.bestThreeDivs:hover{
+    box-shadow: 0 0 5px #0000001f;
 }
 .bestThreeDivs .fa{
     color: #e94d65;
@@ -476,8 +547,10 @@ body{
     width: 45%;
     z-index: 2;
 }
-.randomAchivmnet{
+.achivmentImage img{
     width: 100%;
+}
+.randomAchivmnet{
     border-top-left-radius: 50px;
 }
 .patternImage{
@@ -487,10 +560,23 @@ body{
     z-index: 1;
 }
 
-/* eight section */
-.seventhSection{
+/* ----------  eight section  ------------ */
+
+.eightSection{
     position: relative;
     padding: 150px 0;
+}
+.eightSection:before{
+    content: '';
+    height: 780px;
+    width: 800px;
+    background-image: url(../img/pattern4.png);
+    object-fit: cover;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+
 }
 .estimateImage{
     position: absolute;
@@ -498,7 +584,7 @@ body{
     left: 0;
 }
 
-.achivment .fa{
+.eightSection .fa{
     color: #043d72;
     font-size: 0.8rem;
     margin-right: 15px;
@@ -516,12 +602,36 @@ body{
     margin: 5px 0 20px 30px;
 }
 
-/* nineth section */
+/* ----------  ninth section  ------------ */
 
 .ninethSection{
     width: 100%;
     background-color: #043d72;
     padding: 125px 0;
+    position: relative;
+}
+.ninethSection:before{
+    content: '';
+    height: 250px;
+    width: 250px;
+    background-image: url(../img/pattern6.png);
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+.ninethSection:after{
+    content: '';
+    height: 410px;
+    width: 550px;
+    background-image: url(../img/pattern5.png);
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ninethMain{
+    z-index: 100;
     position: relative;
 }
 .quote{
@@ -543,17 +653,15 @@ body{
 }
 .ninethAnchor{
     margin-top: 50px;
+    transition: all 0.2s ease-in 0s;
 }
-.patter5{
-    position: absolute;
-    bottom: 0;
+.ninethAnchor:hover{
+    background-color: #fff;
+    color: #e94d65;
 }
-.patter6{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-/* tents section */
+
+/* ----------  tenth section  ------------ */
+
 
 .tenthSection{
     padding: 150px 0;
@@ -613,6 +721,11 @@ body{
     border-radius: 25px;
     border: 1px solid #043d72;
     color: #043d72;
+    transition: all 0.2s ease-in 0s;
+}
+.buyNow:hover{
+    background-color: #043d72;
+    color: #fff;
 }
 .middileThreedivs{
     border: 1px solid #e8e8e8;
@@ -624,10 +737,18 @@ body{
 .middileThreedivs .buyNow{
     background-color: #e94d65;
     color: #fff;
-    border: none;
+    border-color: #e94d65;
+    transition: all 0.2s ease-in 0s;
+}
+.middileThreedivs .buyNow:hover{
+    background-color: #fff;
+    color: #e94d65;
+    border: 1px solid #e94d65;
 }
 
-/* eleventh section */
+
+/* ----------  eleventh section  ------------ */
+
 
 .eleventhSevtion{
     width: 100%;
@@ -697,22 +818,46 @@ body{
     margin-right: 5px;
     font-size: 1.2rem;
 }
-/* twelvth section */
+
+/* ----------  twelveth section  ------------ */
+
 
 
 .twelvethSection{
     width: 100%;
-    position: absolute;
-    bottom: -7700px;
+    position: relative;
+    bottom: 120px;
 }
 .twelvethMain{
     text-align: center;
     padding: 85px 0;
     position: relative;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 0 10px #e8e8e8;
+    box-shadow: 0 0 10px #00000066;
     border-top-right-radius: 80px;
     background-color: #fff;
+    z-index: 90;
+}
+.twelvethMain:before{
+    content: '';
+    background-image: url(../img/pattern8.png);
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.twelvethMain:after{
+    content: '';
+    background-image: url(../img/pattern9.png);
+    height: 150px;
+    width: 195px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: -1;
 }
 .subcribeImg{
     position: absolute;
@@ -748,13 +893,17 @@ body{
     top: 8px;
     right: 0;
 }
+.submitType{
+    border: none;
+}
 
-/* thirteenth section */
+
+/* ----------  thirteenth section  ------------ */
+
 
 .thirteenthSection{
     width: 100%;
     background-image: url(../img/footer-bg.png);
-    padding-top: 400px;
     border-top-left-radius: 80px;
 }
 .fourDivs{
@@ -783,12 +932,16 @@ body{
     background-color: #e94d65;
     border-radius: 100%;
     text-align: center;
-}
-.threeIcon .fa{
     font-size: 1rem;
     color: #e2e2e2;
-    margin-top: 7px;
+    padding-top: 3px;
+    transition: all 0.1s ease-in 0s;
 }
+.faIcons:hover{
+    background-color: #fff;
+    color: #e94d65;
+}
+
 .fourHead{
     color: #fff;
     font-size: 1.5rem;
@@ -812,6 +965,7 @@ body{
     padding: 20px 0;
     text-align: center;
     color: #e2e2e2;
+    margin-top: 80px;
 }
 .footerSection p{
     font-size: 0.9rem;
@@ -821,4 +975,191 @@ body{
     font-style: italic;
     color: #e94d65;
     font-size: 1.2rem;
+}
+
+
+
+
+
+/* ---------**    Media querry   **---------  */
+
+
+/*   -----------  view in 1366  ---------   */
+
+
+@media only screen and (max-width:1366px){
+
+    .container{
+        width: 90%;
+    }
+
+    /* -----  nav section  ----- */
+
+    .information .left ul li{
+        margin-right: 24px;
+    }
+    .left-a{
+        font-size: 0.9rem;
+    }
+
+
+    /* -----  first section  ----- */
+
+    .firtSection{
+        background-position-x: -100px;
+    }
+}
+
+/*   -----------  view in 1250  ---------   */
+
+@media only screen and (max-width:1250px){
+
+
+    .container {
+        width: 95%;
+    }
+    .firtSection{
+        background-position-x: -200px;
+    }
+}
+
+/*   -----------  view in 991  ---------   */
+
+@media only screen and (max-width:991px){
+
+    html{
+        font-size: 15px;
+    }
+    .container{
+        width: 75%;
+    }
+    .nav-section .left{
+        display: none;
+    }
+    .information{
+        padding: 0;
+    }
+    .awayHeader{
+        display: none;
+    }
+
+    /* -----  first section  ----- */
+
+    .learnMore{
+        padding: 12px 20px;
+    }
+    .articleBottom{
+        width: 35%;
+    }
+    .play{
+        top: -13px;
+    }
+
+    /* -----  second section  ----- */
+
+    .servicesMain{
+        border-top-right-radius: 0;
+    }
+    .services{
+        width: 100%;
+        border-bottom: 2px solid #f5f5f5;
+    }
+
+    /* -----  combine section  ----- */
+
+    .twoDivs{
+        width: 80%;
+    }
+    .jhonPeter{
+        display: none;
+    }
+    .threedivs{
+        width: 45%;
+    }
+    .achivment{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .achivmentImage{
+        width: 65%;
+    }
+    .quote{
+        width: 100%;
+    }
+    .tenthSection .threeDivs {
+        padding: 20px;
+    }
+    .eleventhSevtion .threeDivs{
+        width: 45%;
+    }
+    .randomThree{
+        display: none;
+    }
+    .fourDivs{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bizupLogo{
+        width: 20%;
+    }
+    .fourDivs ul li{
+        margin-bottom: 5px;
+    }
+}
+
+/*   -----------  view in 768  ---------   */
+
+@media only screen and (max-width:768px){
+
+    .container{
+        width: 85%;
+    }
+
+/* -----  combine section  ----- */
+
+    .firtSection {
+        background-position-x: -400px;
+    }
+    .business{
+        font-size: 5rem;
+    }
+    .firtSection p{
+        padding-right: 250px;
+    }
+    .articleBottom{
+        width: 40%;
+    } 
+    .twoDivs{
+        width: 90%;
+    }
+    .servicesHead{
+        font-size: 1.5rem;
+    }
+    .commonHead{
+        font-size: 2.4rem;
+    }
+    .seventhSection h1{
+        font-size: 2.1rem;
+    }
+    .seventhSection{
+        padding-bottom: 0;
+    }
+    .achievementHead{
+        font-size: 2.1rem;
+    }
+    .eleventhSevtion .threeDivs{
+        width: 48%;
+    }
+    .footerSection{
+        margin-top: 0;
+    }
+
+}
+
+/*   -----------  view in 575  ---------   */
+
+@media only screen and(max-width:575px){
+    .container{
+        width: 100%;
+    }
 }
