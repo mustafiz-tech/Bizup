@@ -1130,7 +1130,7 @@ html{
 /* -----  combine section  ----- */
 
     .firtSection {
-        background-position-x: -400px;
+        width: 100%;
     }
     .business{
         font-size: 5rem;
@@ -1155,6 +1155,9 @@ html{
     }
     .seventhSection{
         padding-bottom: 0;
+    }
+    .eightSection:before{
+        width: 100%;
     }
     .achievementHead{
         font-size: 2.1rem;
@@ -1187,9 +1190,6 @@ html{
     }
     .firtSection p{
         padding-right: 50px;
-    }
-    .eightSection:before{
-        width: 575px;
     }
     .articleBottom{
         width: 60%;
